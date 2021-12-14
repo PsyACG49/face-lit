@@ -1,0 +1,58 @@
+{
+  "publications": [
+    {
+      "id": 1,
+      "user": {
+        "name": "Sergio",
+        "avatar": "/src/assets/img1.jpg"
+      },
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptatibus veniam architecto, eius officia deserunt mollitia unde alias at itaque aliquid aspernatur soluta. Ipsum facilis eum voluptatum. Eius, incidunt natus.",
+      "time": "7:50 h"
+    },
+    {
+      "id": 2,
+      "user": {
+        "name": "Roberto",
+        "avatar": "/src/assets/img1.jpg"
+      },
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptatibus veniam architecto, eius officia deserunt mollitia unde alias at itaque aliquid aspernatur soluta. Ipsum facilis eum voluptatum. Eius, incidunt natus.",
+      "time": "6:30 h"
+    },
+    {
+      "id": 3,
+      "user": {
+        "name": "David",
+        "avatar": "/src/assets/img1.jpg"
+      },
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptatibus veniam architecto, eius officia deserunt mollitia unde alias at itaque aliquid aspernatur soluta. Ipsum facilis eum voluptatum. Eius, incidunt natus.",
+      "time": "10:17 h"
+    },
+    {
+      "user": {
+        "name": "Sergio",
+        "avatar": "/src/assets/img1.jpg"
+      },
+      "content": "dfdsfdf",
+      "time": "17:2 h",
+      "id": 4
+    },
+    {
+      "user": {
+        "name": "Sergio",
+        "avatar": "/src/assets/img1.jpg"
+      },
+      "content": "dfdfdf",
+      "time": "17:2 h",
+      "id": 5
+    },
+    {
+      "user": {
+        "name": "Sergio",
+        "avatar": "/src/assets/img1.jpg"
+      },
+      "content": "hola",
+      "time": "17:2 h",
+      "id": 6
+    }
+  ]
+}
