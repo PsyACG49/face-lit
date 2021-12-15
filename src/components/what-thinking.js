@@ -34,6 +34,7 @@ export class WhatThinking extends LitElement {
         `;
     }
 
+    //Metodo que valida que se tenda una avatar, de lo contrario mostrara un icono de usuario
     getImage(){
         return html`
             ${this.user.avatar ? 
@@ -42,21 +43,28 @@ export class WhatThinking extends LitElement {
             }`
     }
 
+    //Metodo que trae la informacion del input y el usuario para crear una publicacion,
+    //este metodo se ejecuta al disparar el evento @submit
     getDatos(e){
         e.preventDefault();
         let time = new Date();
         let publication = {
             user: this.user,
             content: e.target[0].value,
-            time: `${time.getHours()}:${time.getMinutes()} h`
+            time: {
+                hours: time.getHours(),
+                minutes: time.getMinutes()
+            }
         }
         this.sendData(publication);
         e.target[0].value = "";
     
     }
 
+    //Metodo que dispara un evento @send-post, que al momento de ser propagado
+    //lleva en el detail la informacion de la publicacion 
     sendData(publication){
-        this.dispatchEvent(new CustomEvent('SendPost', {
+        this.dispatchEvent(new CustomEvent('send-post', {
             detail: { publication },
             bubbles: true,
             composed: true

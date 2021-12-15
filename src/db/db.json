@@ -4,55 +4,40 @@
       "id": 1,
       "user": {
         "name": "Sergio",
+        "lastName": "Medina",
         "avatar": "/src/assets/img1.jpg"
       },
       "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptatibus veniam architecto, eius officia deserunt mollitia unde alias at itaque aliquid aspernatur soluta. Ipsum facilis eum voluptatum. Eius, incidunt natus.",
-      "time": "7:50 h"
+      "time": {
+        "hours": 4,
+        "minutes": 22
+      }
     },
     {
       "id": 2,
       "user": {
         "name": "Roberto",
+        "lastName": "Morales",
         "avatar": "/src/assets/img1.jpg"
       },
       "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptatibus veniam architecto, eius officia deserunt mollitia unde alias at itaque aliquid aspernatur soluta. Ipsum facilis eum voluptatum. Eius, incidunt natus.",
-      "time": "6:30 h"
+      "time": {
+        "hours": 9,
+        "minutes": 44
+      }
     },
     {
       "id": 3,
       "user": {
         "name": "David",
+        "lastName": "Mares",
         "avatar": "/src/assets/img1.jpg"
       },
       "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et voluptatibus veniam architecto, eius officia deserunt mollitia unde alias at itaque aliquid aspernatur soluta. Ipsum facilis eum voluptatum. Eius, incidunt natus.",
-      "time": "10:17 h"
-    },
-    {
-      "user": {
-        "name": "Sergio",
-        "avatar": "/src/assets/img1.jpg"
-      },
-      "content": "dfdsfdf",
-      "time": "17:2 h",
-      "id": 4
-    },
-    {
-      "user": {
-        "name": "Sergio",
-        "avatar": "/src/assets/img1.jpg"
-      },
-      "content": "dfdfdf",
-      "time": "17:2 h",
-      "id": 5
-    },
-    {
-      "user": {
-        "name": "Sergio",
-        "avatar": "/src/assets/img1.jpg"
-      },
-      "content": "hola",
-      "time": "17:2 h",
-      "id": 6
+      "time": {
+        "hours": 3,
+        "minutes": 14
+      }
     }
   ]
 }

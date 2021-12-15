@@ -13,6 +13,7 @@ export class DataManagerGet extends LitElement {
         this.url = 'http://localhost:3000/publications';
     }
 
+    //Metodo que envia los datos de una peticion GET por medio de un CustomEvent en su detail 
     _setData(data){
         this.dispatchEvent(new CustomEvent('data-api', {
             detail: { data },
@@ -21,6 +22,7 @@ export class DataManagerGet extends LitElement {
         }));
     }
 
+    //Metodo que genera una peticion de tipo GET 
     generateRequest(){
         fetch(this.url)
         .then(response => response.json())

@@ -30,6 +30,7 @@ export class ListPublics extends LitElement {
         `;
     }
 
+    //Metodo que pinta las publicaciones que se reciben de la prop publications
     showPublications(){
         if(this.listPublications){
             return html`

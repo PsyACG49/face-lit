@@ -4,24 +4,30 @@ export class DataManagerPost extends LitElement {
     static get properties(){
         return{
             url: {type: String},
-            options: {type: Object}
+            method: {type:String},
+            headers: {type: Object},
+            body: {type:String}
         };
     };
 
     constructor(){
         super();
         this.url = 'http://localhost:3000/publications';
-        this.options = {
-            method:"POST",
-            headers:{
-                'Content-type': 'application/json; charset=UTF-8',
-            },
-            body:''
+        this.method = "POST";
+        this.headers = {
+            'Content-type': 'application/json; charset=UTF-8',
         }
+        this.body = '';
     }
 
+    //Metodo que genera un peticion de tipo POST
     generateRequest(){
-        return fetch(this.url, this.options)
+        let options = {
+            method: this.method,
+            headers: this.headers,
+            body: this.body
+        }
+        return fetch(this.url, options)
         .then((response) => response.json())
         .catch(error => {
             console.log(error);
