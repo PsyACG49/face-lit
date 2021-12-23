@@ -34,6 +34,5 @@ export class DataManagerPost extends LitElement {
         })
     };
 
-
 }
 customElements.define('data-manager-post', DataManagerPost);

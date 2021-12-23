@@ -12,13 +12,16 @@ export class WhatThinking extends LitElement {
     static get properties(){
         return{
             user: {type:Object},
-            inText: {type:String}
+            placeHolder: {type:String},
+            iconAux:{type:String}
         }
     }
 
     constructor(){
         super();
         this.user = {};
+        this.placeHolder = "What are you thinking, ";
+        this.iconAux = "account_circle"; 
     }
 
 
@@ -28,7 +31,7 @@ export class WhatThinking extends LitElement {
             <div class="comp-container">
                 ${this.getImage()}    
                 <form class="comp-form" @submit=${this.getDatos}>
-                    <input class="comp-form-input" type="text" placeholder="¿What are you thinking, ${this.user.name}?"/>
+                    <input class="comp-form-input" type="text" placeholder="¿${this.placeHolder}${this.user.name}?"/>
                 </form>
             </div>
         `;
@@ -39,7 +42,7 @@ export class WhatThinking extends LitElement {
         return html`
             ${this.user.avatar ? 
             html`<img class="comp-img" src="${this.user.avatar}">` :
-            html`<span class="material-icons-outlined comp-avatar">account_circle</span>`
+            html`<span class="material-icons-outlined comp-avatar">${this.iconAux}</span>`
             }`
     }
 

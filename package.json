@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "web-test-runner test/**/*.test.js --node-resolve --coverage",
     "start": "json-server --watch ./src/db/db.json"
   },
   "keywords": [],
@@ -12,5 +12,9 @@
   "license": "ISC",
   "dependencies": {
     "lit-element": "^3.0.2"
+  },
+  "devDependencies": {
+    "@open-wc/testing": "^3.0.3",
+    "@web/test-runner": "^0.13.22"
   }
 }

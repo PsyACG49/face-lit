@@ -53,27 +53,9 @@ export class MyApp extends LitElement {
     callService(){
         let datos = new DataManagerGet();
         datos.generateRequest()
-        datos.addEventListener('data-api', (data) => {
-            this.publications = this.formatData(data.detail.data)
+        datos.addEventListener('data-api', (e) => {
+            this.publications = e.detail.data
         });
-    }
-
-    //Metodo que da formato a los datos traidos de la peticion GET, 
-    //se retorna un arreglo con publicaciones en el formato deseado 
-    formatData(data = []){
-        let dataForm = []
-        data.map( el =>{
-            let pub = {
-                user: {
-                    name: el.user.name,
-                    avatar: el.user.avatar
-                  },
-                  content: el.content,
-                  time: `${el.time.hours}:${el.time.minutes} h`
-            }
-            dataForm.push(pub);
-        })
-        return dataForm;
     }
 
     //Metodo que realiza una peticion de tipo POST al disparar el evento SendPost

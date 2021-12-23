@@ -23,6 +23,7 @@ const styles = css`
 .nav-item:hover{
     background-color: #506375;
 }
+
 `;
 
 export {styles};
