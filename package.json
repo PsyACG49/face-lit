@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "json-server": "^0.17.0",
     "lit-element": "^3.0.2"
   },
   "devDependencies": {
