@@ -18,6 +18,7 @@ export class DataManagerGet extends LitElement {
     let dataForm = [];
     data.map((el) => {
       let pub = {
+        id: el.id,
         user: {
           name: el.user.name,
           avatar: el.user.avatar,

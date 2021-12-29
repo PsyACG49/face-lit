@@ -2,6 +2,7 @@ import { LitElement, html } from "lit-element";
 import { styles } from "../styles/my.app";
 import { DataManagerGet } from "./DataManagers/data-manager-get";
 import { DataManagerPost } from "./DataManagers/data-manager-post";
+import { DataManagerDelete } from "./DataManagers/data-manager-delete";
 import "./what-thinking";
 import "./nav-app";
 import "./list-publics";
@@ -43,6 +44,7 @@ export class MyApp extends LitElement {
         ></what-thinking>
         <nav-app class="nav-a" .user="${this.user}"></nav-app>
         <list-publics
+          @send-delete="${this.deletePublication}"
           class="list-p"
           .listPublications="${this.publications}"
         ></list-publics>
@@ -67,6 +69,15 @@ export class MyApp extends LitElement {
     post.generateRequest().then(() => {
       this.callService();
     });
+  }
+
+  deletePublication(e){
+    let delet = new DataManagerDelete();
+    delet.id = e.detail.idPub;
+    console.log(delet.id);
+    delet.generateRequest().then(() =>{
+      this.callService();
+    })
   }
 }
 customElements.define("my-app", MyApp);

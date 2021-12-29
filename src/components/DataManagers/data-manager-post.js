@@ -8,7 +8,7 @@ export class DataManagerPost extends LitElement {
       headers: { type: Object },
       body: { type: String },
     };
-  }
+  };
 
   constructor() {
     super();
