@@ -52,9 +52,9 @@ export class ItemPublication extends LitElement {
     if (isdelete) {
       this.dispatchEvent(
         new CustomEvent("send-delete", {
-        detail: { idPub },
-        bubbles: true,
-        composed: true,
+          detail: { idPub },
+          bubbles: true,
+          composed: true,
         })
       );
     }

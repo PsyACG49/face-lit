@@ -3,6 +3,7 @@ import { styles } from "../styles/my.app";
 import { DataManagerGet } from "./DataManagers/data-manager-get";
 import { DataManagerPost } from "./DataManagers/data-manager-post";
 import { DataManagerDelete } from "./DataManagers/data-manager-delete";
+import "./modal-edit";
 import "./what-thinking";
 import "./nav-app";
 import "./list-publics";
@@ -49,6 +50,7 @@ export class MyApp extends LitElement {
           .listPublications="${this.publications}"
         ></list-publics>
       </div>
+      <modal-edit></modal-edit>
     `;
   }
 
