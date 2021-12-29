@@ -74,7 +74,6 @@ export class MyApp extends LitElement {
   deletePublication(e){
     let delet = new DataManagerDelete();
     delet.id = e.detail.idPub;
-    console.log(delet.id);
     delet.generateRequest().then(() =>{
       this.callService();
     })
