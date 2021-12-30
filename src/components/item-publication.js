@@ -31,7 +31,7 @@ export class ItemPublication extends LitElement {
             <p class="time">${this.publication.time}</p>
             <span class="material-icons-outlined icon-world"> public </span>
           </div>
-          <span class="material-icons-outlined icon-edit"> edit </span>
+          <span class="material-icons-outlined icon-edit" @click="${this.sendUpdatePub}"> edit </span>
         </div>
         <div class="body-publication">
           <p>${this.publication.content}</p>
@@ -58,6 +58,18 @@ export class ItemPublication extends LitElement {
         })
       );
     }
+  }
+
+  sendUpdatePub() {
+    let changePub = this.publication;
+    console.log(changePub);
+    this.dispatchEvent(
+      new CustomEvent('send-act', {
+        detail: {changePub},
+        bubbles: true,
+        composed: true,
+      })
+    );
   }
 }
 customElements.define("item-publication", ItemPublication);

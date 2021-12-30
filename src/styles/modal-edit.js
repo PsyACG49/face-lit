@@ -21,6 +21,11 @@ export const styles = css`
     background: rgba(0, 0, 0, 0.452);
   }
 
+  .modal-cont-close {
+    opacity: 0;
+    visibility: hidden;
+  }
+
   .modal {
     width: 40%;
     height: 50%;
@@ -31,10 +36,49 @@ export const styles = css`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 10px
+    border-radius: 10px;
+    position: relative;
   }
 
-  .close{
-    
+  .close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: #c44a4a;
+    color: #fff;
+    line-height: 25px;
+    cursor: pointer;
+    border-radius: 50px;
+  }
+
+  .text-modal {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #1f2933;
+  }
+
+  .T-area {
+    border-radius: 10px;
+  }
+
+  .save-change {
+    width: 100px;
+    height: 50px;
+    color: #fff;
+    background: #1f2933;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 40px;
+    padding: 4px;
+    margin-top: 20px;
+  }
+
+  .save-change:hover {
+    background-color: #313942;
+    cursor: pointer;
   }
 `;

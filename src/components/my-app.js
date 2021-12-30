@@ -17,6 +17,8 @@ export class MyApp extends LitElement {
     return {
       user: { type: Object },
       publications: { type: Array },
+      updatePublic: { type: Object },
+      modal: { type: Boolean }
     };
   }
 
@@ -28,6 +30,9 @@ export class MyApp extends LitElement {
       avatar: "/src/assets/img1.jpg",
     };
     this.publications = [];
+    this.updatePublic = {};
+    this.modal = true;
+
   }
 
   firstUpdated() {
@@ -80,5 +85,10 @@ export class MyApp extends LitElement {
       this.callService();
     })
   }
+
+  // updatePublic(e) {
+  //   console.log(e.detail);
+  // }
+
 }
 customElements.define("my-app", MyApp);
