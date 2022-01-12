@@ -3,8 +3,6 @@ import '../src/components/item-list';
 
 describe('Puebas componente item-list', () => {
     it('carga de componente item-list', async () => {
-        const el = await fixture(html`
-            <item-list></item-list>
-        `)
+        const el = await fixture(html` <item-list></item-list> `);
     });
 })
