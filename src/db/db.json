@@ -38,6 +38,32 @@
         "hours": 3,
         "minutes": 4
       }
+    },
+    {
+      "user": {
+        "name": "Sergio",
+        "lastName": "Cuevas",
+        "avatar": "/src/assets/img1.jpg"
+      },
+      "content": "Es que eso si esta",
+      "time": {
+        "hours": 17,
+        "minutes": 10
+      },
+      "id": 4
+    },
+    {
+      "user": {
+        "name": "Sergio",
+        "lastName": "Cuevas",
+        "avatar": "/src/assets/img1.jpg"
+      },
+      "content": "Pues a veces",
+      "time": {
+        "hours": 14,
+        "minutes": 42
+      },
+      "id": 5
     }
   ]
 }
